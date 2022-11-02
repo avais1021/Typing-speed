@@ -37,6 +37,7 @@ h1{
 
 .heading{
     text-shadow: 2px 2px blue;
+    margin-top: 10px;
 }
 
 #msg{
