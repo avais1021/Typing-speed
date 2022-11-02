@@ -18,6 +18,7 @@
     /* background: url(bgjpg.jpg) no-repeat center center/cover; */
     /* background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%); */
     background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    min-height: 720px;
 }
 
 .box{
