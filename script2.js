@@ -23,8 +23,9 @@ const playGame = () => {
     let date = new Date();
     startTime = date.getTime();
     btn.innerText = "DONE";
-    
+
     typeWords.value = "";
+    result.innerText = "";
     //  console.log(startTime);
 }
 
