@@ -10,6 +10,7 @@ const setOfWords = [
 // console.log(setOfWords);
 
 const msg = document.getElementById("msg");
+const result = document.getElementsByClassName("result")[0]; 
 const typeWords = document.getElementById("myWords");
 const btn = document.getElementById("btn");
 let startTime, endTime;
@@ -22,6 +23,8 @@ const playGame = () => {
     let date = new Date();
     startTime = date.getTime();
     btn.innerText = "DONE";
+    
+    typeWords.value = "";
     //  console.log(startTime);
 }
 
@@ -37,7 +40,8 @@ const endGame = () => {
 
     let finalMsg = "You typed total at " + speed + " words per minutes, ";
     finalMsg += compareWords(msg.innerText, totalstr)
-    msg.innerText = finalMsg;
+    result.innerText = finalMsg;
+
     console.log(speed);
 }
 
